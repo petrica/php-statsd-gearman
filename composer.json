@@ -1,0 +1,36 @@
+{
+    "name": "petrica/statsd-gearman",
+    "type": "library",
+    "description": "statsd gearman metrics collector in PHP",
+    "keywords": ["monitoring", "statsd", "gearman", "workers", "queue"],
+    "homepage": "https://github.com/petrica/php-statsd-gearman",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Petrica Martinescu",
+            "email": "petrica@martinescu.com"
+        },
+        {
+            "name": "Tremend Software Consulting",
+            "homepage": "http://www.tremend.com/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/petrica/php-statsd-gearman/issues"
+    },
+    "require": {
+        "petrica/statsd-system": "dev-master",
+        "brianlmoon/net_gearman": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">= 4.8.0"
+    },
+    "autoload": {
+        "psr-4" : {
+            "Petrica\\StatsdGearman\\" : ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    }
+}
