@@ -32,3 +32,9 @@ sudo apt-get install -y php5-cli php5-xdebug
 # Make vagrant folder
 sudo mkdir -p /vagrant
 sudo chown vagrant.vagrant /vagrant
+
+echo '#!/bin/bash'                   >  /etc/profile.d/xdebug.sh
+echo 'export SERVER_NAME=statsd-gearman'>> /etc/profile.d/xdebug.sh
+echo 'export SERVER_PORT=80'            >> /etc/profile.d/xdebug.sh
+chmod u+x /etc/profile.d/xdebug.sh
+/bin/bash /etc/profile.d/xdebug.sh

@@ -1,6 +1,6 @@
 gauges:
-    gearman.worker:
+    gearman:
         class: Petrica\StatsdGearman\Gauge\GearmanGauge
         arguments:
-            server: localhost:7003
+            server: localhost:4730
             timeout: 1

@@ -1,0 +1,5 @@
+gearman:
+    image: "pataquets/gearmand"
+    ports:
+        - 4730:4730
+    command: --log-file=/dev/stdout
