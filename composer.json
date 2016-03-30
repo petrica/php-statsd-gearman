@@ -19,8 +19,8 @@
         "issues": "https://github.com/petrica/php-statsd-gearman/issues"
     },
     "require": {
-        "petrica/statsd-system": "@dev",
-        "brianlmoon/net_gearman": "@dev"
+        "petrica/statsd-system": "dev-master",
+        "brianlmoon/net_gearman": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": ">= 4.8.0"
