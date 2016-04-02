@@ -61,9 +61,9 @@ class GearmanGauge implements GaugeInterface
 
         if (!empty($stats)) {
             foreach ($stats as $jobName => $data) {
-                $collection->add($jobName . '.queue.count', isset($data['in_queue']) ? $data['in_queue'] : null);
-                $collection->add($jobName . '.running.count', isset($data['jobs_running']) ? $data['jobs_running'] : null);
-                $collection->add($jobName . '.workers.count', isset($data['capable_workers']) ? $data['capable_workers'] : null);
+                $collection->add($jobName . '.queue', isset($data['in_queue']) ? $data['in_queue'] : null);
+                $collection->add($jobName . '.running', isset($data['jobs_running']) ? $data['jobs_running'] : null);
+                $collection->add($jobName . '.workers', isset($data['capable_workers']) ? $data['capable_workers'] : null);
             }
         }
 
