@@ -14,7 +14,6 @@ composer require petrica/statsd-gearman
 Requirements:
 -------------
 
-* Linux/Unix OS
 * PHP ^5.5
 
 Run with:
